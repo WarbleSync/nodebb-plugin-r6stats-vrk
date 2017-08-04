@@ -1,0 +1,27 @@
+{
+  "name": "nodebb-plugin-r6stats-vrk",
+  "version": "0.0.1",
+  "description": "nodebb-plugin-r6stats-vrk",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/warblesync/nodebb-plugin-r6stats-vrk"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "nodebb-plugin-r6stats-vrk"
+  ],
+  "author": {
+    "name": "warblesync",
+    "email": "warblesync@gmail.com"
+  },
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/warblesync/nodebb-plugin-r6stats-vrk/issues"
+  },
+  "readmeFilename": "README.md",
+  "nbbpm": {
+    "compatibility": "^1.0.0"
+  }
+}
