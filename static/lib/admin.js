@@ -10,7 +10,7 @@ define('admin/plugins/r6stats', ['settings'], function(Settings) {
 
 		$('#save').on('click', function() {
 			Settings.save('r6stats', $('.r6stats-settings'), function() {
-				console.log('save')
+				// console.log('save')
 				app.alert({
 					type: 'success',
 					alert_id: 'r6stats-saved',
@@ -24,7 +24,21 @@ define('admin/plugins/r6stats', ['settings'], function(Settings) {
 		});
 
 		$('#updateStats').on('click', function(){
-			window.location.href = "/admin/plugins/r6stats/update";
+			app.alert({
+				type: 'info',
+				alert_id: 'r6stats-update',
+				title: 'Update Started',
+				message: 'Please wait while stats are calculated'
+			});
+			socket.emit('plugins.R6STATS.updateStats', {}, function (err, data) {
+			  // console.log(data)
+				app.alert({
+					type: 'success',
+					alert_id: 'r6stats-update',
+					title: 'Update Complete',
+					message: 'Success! Stats calculated!',
+				});
+			})
 			return false;
 		})
 
