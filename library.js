@@ -1,8 +1,7 @@
 "use strict";
 
 var controllers = require('./lib/controllers'),
-
-	plugin = {};
+plugin = {};
 
 plugin.init = function(params, callback) {
 	var router = params.router,
@@ -16,6 +15,8 @@ plugin.init = function(params, callback) {
 	router.get('/api/admin/plugins/r6stats', controllers.renderAdminPage);
 	router.get('/admin/plugins/r6stats/update', hostMiddleware.admin.buildHeader, controllers.updateStatsManual);
 
+	//schedule cron jobs
+	controllers.startJobs();
 	callback();
 };
 
@@ -23,7 +24,7 @@ plugin.addAdminNavigation = function(header, callback) {
 	header.plugins.push({
 		route: '/plugins/r6stats',
 		icon: 'fa-tint',
-		name: 'r6stats'
+		name: 'R6STATS'
 	});
 
 	callback(null, header);

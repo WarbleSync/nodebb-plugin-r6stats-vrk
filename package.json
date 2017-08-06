@@ -23,5 +23,10 @@
   "readmeFilename": "README.md",
   "nbbpm": {
     "compatibility": "^1.0.0"
+  },
+  "dependencies": {
+    "cron-parser": "^2.4.1",
+    "lodash": "^4.17.4",
+    "rainbowsix-api-node": "0.0.1"
   }
 }
