@@ -5,7 +5,7 @@
   "main": "library.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/warblesync/nodebb-plugin-r6stats-vrk"
+    "url": "https://github.com/WarbleSync/nodebb-plugin-r6stats-vrk"
   },
   "keywords": [
     "nodebb",
@@ -18,7 +18,7 @@
   },
   "license": "",
   "bugs": {
-    "url": "https://github.com/warblesync/nodebb-plugin-r6stats-vrk/issues"
+    "url": "https://github.com/WarbleSync/nodebb-plugin-r6stats-vrk/issues"
   },
   "readmeFilename": "README.md",
   "nbbpm": {

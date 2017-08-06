@@ -1,6 +1,6 @@
 {
 	"id": "nodebb-plugin-r6stats-vrk",
-	"url": "https://github.com/NodeBB/nodebb-plugin-r6stats-vrk",
+	"url": "https://github.com/WarbleSync/nodebb-plugin-r6stats-vrk.git",
 	"library": "./library.js",
 	"hooks": [
 		{

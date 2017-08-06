@@ -4,6 +4,7 @@
 			<p class="lead">
 				This plugin uses R6stats.com for data.
 			</p>
+			<p></p>
 		</div>
 	</div>
 	<div class="col-sm-12 col-xs-12">
@@ -20,11 +21,9 @@
 			<input type="text" id="updateTime" name="updateTime" title="Update Time" class="form-control" placeholder="Example: 15 0 * * *"/>
 		</div>
 	</div>
-	<div class="col-sm-12 col-xs-12 text-right">
-		<button id="updateStats" class="btn btn-primary">Update Stats</button>
-	</div>
-</form>
 
-<button id="save" class="floating-button mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-	<i class="material-icons">save</i>
-</button>
+</form>
+<div class="col-sm-12 col-xs-12 text-right">
+	<button id="updateStats" class="btn btn-primary">Update Stats</button>
+	<button id="save" class="btn btn-primary">Save Settings</button>
+</div>
